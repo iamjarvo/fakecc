@@ -7,7 +7,8 @@
   (let [card-name (last (js->clj js/process.argv))
         num (case card-name
               "visa" "4242424242424242"
-              "discover" "6011000990139424")]
+              "discover" "6011000990139424"
+              "Invalid credit card name")]
     (println num)))
 
 (set! *main-cli-fn* -main)
